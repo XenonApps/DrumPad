@@ -11,6 +11,8 @@
 		6B14CD2B2AD81BF40010CE4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14CD2A2AD81BF40010CE4A /* ContentView.swift */; };
 		6B14CD2D2AD81BF60010CE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B14CD2C2AD81BF60010CE4A /* Assets.xcassets */; };
 		6B14CD302AD81BF60010CE4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B14CD2F2AD81BF60010CE4A /* Preview Assets.xcassets */; };
+		6B14CD382AD81C330010CE4A /* drumSimp.exs in Resources */ = {isa = PBXBuildFile; fileRef = 6B14CD372AD81C330010CE4A /* drumSimp.exs */; };
+		6B14CD3C2AD81C7D0010CE4A /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6B14CD3B2AD81C7D0010CE4A /* AudioKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		6B14CD2A2AD81BF40010CE4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B14CD2C2AD81BF60010CE4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B14CD2F2AD81BF60010CE4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B14CD372AD81C330010CE4A /* drumSimp.exs */ = {isa = PBXFileReference; lastKnownFileType = file; path = drumSimp.exs; sourceTree = "<group>"; };
+		6B14CD392AD81C630010CE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B14CD3C2AD81C7D0010CE4A /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +56,8 @@
 		6B14CD272AD81BF40010CE4A /* DrumPad */ = {
 			isa = PBXGroup;
 			children = (
+				6B14CD392AD81C630010CE4A /* Info.plist */,
+				6B14CD362AD81C1C0010CE4A /* Sounds */,
 				6B14CD282AD81BF40010CE4A /* DrumPadApp.swift */,
 				6B14CD2A2AD81BF40010CE4A /* ContentView.swift */,
 				6B14CD2C2AD81BF60010CE4A /* Assets.xcassets */,
@@ -65,6 +72,14 @@
 				6B14CD2F2AD81BF60010CE4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6B14CD362AD81C1C0010CE4A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6B14CD372AD81C330010CE4A /* drumSimp.exs */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +98,9 @@
 			dependencies = (
 			);
 			name = DrumPad;
+			packageProductDependencies = (
+				6B14CD3B2AD81C7D0010CE4A /* AudioKit */,
+			);
 			productName = DrumPad;
 			productReference = 6B14CD252AD81BF40010CE4A /* DrumPad.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +129,9 @@
 				Base,
 			);
 			mainGroup = 6B14CD1C2AD81BF40010CE4A;
+			packageReferences = (
+				6B14CD3A2AD81C7D0010CE4A /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
 			productRefGroup = 6B14CD262AD81BF40010CE4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +148,7 @@
 			files = (
 				6B14CD302AD81BF60010CE4A /* Preview Assets.xcassets in Resources */,
 				6B14CD2D2AD81BF60010CE4A /* Assets.xcassets in Resources */,
+				6B14CD382AD81C330010CE4A /* drumSimp.exs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +297,7 @@
 				DEVELOPMENT_TEAM = 2FHUSX76Z9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrumPad/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +327,7 @@
 				DEVELOPMENT_TEAM = 2FHUSX76Z9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrumPad/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B14CD3A2AD81C7D0010CE4A /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B14CD3B2AD81C7D0010CE4A /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B14CD3A2AD81C7D0010CE4A /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6B14CD1D2AD81BF40010CE4A /* Project object */;
 }
