@@ -1,0 +1,74 @@
+LSPrefs: could not find untranslocated node for <FSNode 0x60000367de40> { isDir = ?, path = '/private/var/folders/j8/5l2g9klx4jg927_mfdwztpzc0000gn/X/AE1EE971-C51C-52E8-8134-9C8D4F96CC37/d/Wrapper/DrumPad.app' }, proceeding on the assumption it is not translocated: Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"
+LSPrefs: could not find untranslocated node for <FSNode 0x60000367de40> { isDir = ?, path = '/private/var/folders/j8/5l2g9klx4jg927_mfdwztpzc0000gn/X/AE1EE971-C51C-52E8-8134-9C8D4F96CC37/d/Wrapper/DrumPad.app' }, proceeding on the assumption it is not translocated: Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"
+LSPrefs: could not find untranslocated node for <FSNode 0x60000367de40> { isDir = ?, path = '/private/var/folders/j8/5l2g9klx4jg927_mfdwztpzc0000gn/X/AE1EE971-C51C-52E8-8134-9C8D4F96CC37/d/Wrapper/DrumPad.app' }, proceeding on the assumption it is not translocated: Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"
+AddInstanceForFactory: No factory registered for id <CFUUID 0x600003617680> F8BB1C28-BAE8-11D6-9C31-00039315CD46
+CARP violation: using HAL semantics (AUIOImpl_Base)
+0             0x194c744a0    HandleCARPViolation + 212
+1             0x10e8d690c    AUNewPitchFactory + 7284
+2             0x10e8e03dc    AUNewPitchFactory + 46916
+3             0x10e8f46d0    AUMultibandCompressorFactory + 3716
+4             0x10e8f4640    AUMultibandCompressorFactory + 3572
+5             0x10e8d8bc4    AUNewPitchFactory + 16172
+6             0x10e8dc6b0    AUNewPitchFactory + 31256
+7             0x10e9acd54    AUNotQuiteSoSimpleTimeFactory + 29552
+8             0x10e9b0604    AUNotQuiteSoSimpleTimeFactory + 44064
+9             0x1870d1c90    AudioUnitGetProperty + 452
+10            0x186fc9c04    +[AUAudioUnit auAudioUnitForAudioUnit:] + 140
+11            0x1eed9f234    AUInterfaceBaseV3::AUInterfaceBaseV3(AudioComponentDescription const&, ComponentInstanceRecord*) + 1000
+12            0x1eee5df54    AVAudioIOUnit::AVAudioIOUnit(AVAudioEngineImpl&, AudioComponentDescription) + 304
+13            0x1eee5dccc    AVAudioIOUnit::Create(AVAudioEngineImpl&, bool, bool) + 1288
+14            0x1eee678e4    AVAudioEngineImpl::GetIOUnit(bool) + 284
+15            0x1eee66de8    AVAudioEngineImpl::UpdateOutputNode(bool) + 152
+16            0x1eee6b380    AVAudioEngineImpl::GetOutputNode() + 136
+17            0x1eee6ec64    -[AVAudioEngine outputNode] + 44
+18            0x10220e18c    $s8AudioKit0A6EngineC06createC5Mixer33_BBA7C59B6014A6A2181272B002E0697ELLyyF + 360
+19            0x10220dc78    $s8AudioKit0A6EngineC6outputAA4Node_pSgvW + 1508
+20            0x10220dee0    $s8AudioKit0A6EngineC6outputAA4Node_pSgvs + 188
+21            0x1021e0b30    $s7DrumPad0A5ClassCACycfc + 292
+22            0x1021e0a00    $s7DrumPad0A5ClassCACycfC + 44
+23            0x1021e1648    $s7DrumPad11ContentViewV10_conductor33_90B0618FFFDB1E0EFECB38F4C669C059LL7SwiftUI11StateObjectVyAA0A5ClassCGvpfiAJycfu_AJycfu0_ + 28
+24            0x1cb9ade40    OUTLINED_FUNCTION_0 + 1232
+25            0x1cb48ef68    OUTLINED_FUNCTION_0 + 9204
+26            0x1cb48e674    OUTLINED_FUNCTION_0 + 6912
+27            0x1cc4a7f00    OUTLINED_FUNCTION_0 + 13252
+28            0x1cc4a7f40    OUTLINED_FUNCTION_0 + 13316
+29            0x1945c76a0    $ss24withUnsafeMutablePointer2to_q_xz_q_SpyxGKXEtKr0_lF + 28
+30            0x1cc4a7b98    OUTLINED_FUNCTION_0 + 12380
+31            0x1cbf1aa60    __swift_allocate_boxed_opaque_existential_1Tm + 268
+32            0x1b126c790    AG::Graph::UpdateStack::update() + 512
+33            0x1b126cfcc    AG::Graph::update_attribute(AG::data::ptr<AG::Node>, unsigned int) + 424
+34            0x1b12759e4    AG::Graph::input_value_ref_slow(AG::data::ptr<AG::Node>, AG::AttributeID, unsigned int, unsigned int, AGSwiftMetadata const*, unsigned char&, long) + 720
+35            0x1b128dc2c    AGGraphGetValue + 228
+36            0x1cb004f00    OUTLINED_FUNCTION_37 + 1160664
+37            0x1cb25f928    objectdestroy.2100Tm + 41008
+38            0x1b126c790    AG::Graph::UpdateStack::update() + 512
+39            0x1b126cfcc    AG::Graph::update_attribute(AG::data::ptr<AG::Node>, unsigned int) + 424
+40            0x1b12759e4    AG::Graph::input_value_ref_slow(AG::data::ptr<AG::Node>, AG::AttributeID, unsigned int, unsigned int, AGSwiftMetadata const*, unsigned char&, long) + 720
+41            0x1b128dc2c    AGGraphGetValue + 228
+42            0x1cba15c48    OUTLINED_FUNCTION_15 + 34552
+43            0x1cba15cfc    OUTLINED_FUNCTION_15 + 34732
+44            0x1cbca5918    OUTLINED_FUNCTION_64 + 478536
+45            0x1cbcb903c    objectdestroy.769Tm + 25440
+46            0x1b126c790    AG::Graph::UpdateStack::update() + 512
+47            0x1b126cfcc    AG::Graph::update_attribute(AG::data::ptr<AG::Node>, unsigned int) + 424
+48            0x1b12759e4    AG::Graph::input_value_ref_slow(AG::data::ptr<AG::Node>, AG::AttributeID, unsigned int, unsigned int, AGSwiftMetadata const*, unsigned char&, long) + 720
+49            0x1b128dc2c    AGGraphGetValue + 228
+50            0x1cbc5a948    OUTLINED_FUNCTION_64 + 171384
+51            0x1cbca6b1c    OUTLINED_FUNCTION_64 + 483148
+52            0x1cbcb31d8    objectdestroy.769Tm + 1276
+53            0x1b126c790    AG::Graph::UpdateStack::update() + 512
+54            0x1b126cfcc    AG::Graph::update_attribute(AG::data::ptr<AG::Node>, unsigned int) + 424
+55            0x1b12759e4    AG::Graph::input_value_ref_slow(AG::data::ptr<AG::Node>, AG::AttributeID, unsigned int, unsigned int, AGSwiftMetadata const*, unsigned char&, long) + 720
+56            0x1b128dc2c    AGGraphGetValue + 228
+57            0x1cbc9abec    OUTLINED_FUNCTION_64 + 434204
+58            0x1b126c790    AG::Graph::UpdateStack::update() + 512
+59            0x1b126cfcc    AG::Graph::update_attribute(AG::data::ptr<AG::Node>, unsigned int) + 424
+60            0x1b12759e4    AG::Graph::input_value_ref_slow(AG::data::ptr<AG::Node>, AG::AttributeID, unsigned int, unsigned int, AGSwiftMetadata const*, unsigned char&, long) + 720
+61            0x1b128dc2c    AGGraphGetValue + 228
+62            0x1cc3fb4a0    OUTLINED_FUNCTION_57 + 88088
+63            0x1cb2a9928    objectdestroy.8329Tm + 4556
+[truncated?]
+AQMEIO_HAL.cpp:777 kAudioDevicePropertyMute returned err 2,003,332,927
+128,007 HALC_ProxyIOContext.cpp:1,329 HALC_ProxyIOContext::IOWorkLoop: skipping cycle due to overload
+128,007 HALC_ProxyIOContext.cpp:1,329 HALC_ProxyIOContext::IOWorkLoop: skipping cycle due to overload
+LSPrefs: could not find untranslocated node for <FSNode 0x60000367de40> { isDir = ?, path = '/private/var/folders/j8/5l2g9klx4jg927_mfdwztpzc0000gn/X/AE1EE971-C51C-52E8-8134-9C8D4F96CC37/d/Wrapper/DrumPad.app' }, proceeding on the assumption it is not translocated: Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"
