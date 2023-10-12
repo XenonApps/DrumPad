@@ -16,6 +16,7 @@ class DrumClass: ObservableObject {
     
     init() {
         engine.output = instrument
+        loadInstrument()
         try? engine.start()
     }
     
@@ -24,10 +25,10 @@ class DrumClass: ObservableObject {
             if let fileURL = Bundle.main.url(forResource: "Sounds/drumSimp", withExtension: "exs") {
                 try instrument.loadInstrument(url: fileURL)
             } else {
-                Log("Could not find file")
+                print("Could not find file")
             }
         } catch {
-            Log("Could not load instrument")
+            print("Could not load instrument")
         }
     }
 }
@@ -37,7 +38,7 @@ struct ContentView: View {
     @StateObject var conductor = DrumClass()
     
     var body: some View {
-        RoundedRectangle(cornerRadius: 20)
+        RoundedRectangle(cornerRadius: 40)
             .fill(Color.black.opacity(0.5))
             .aspectRatio(contentMode: .fit)
             .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
